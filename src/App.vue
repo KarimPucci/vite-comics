@@ -1,14 +1,24 @@
-<script setup>
+<script>
+import AppHeader from "./components/AppHeader.vue";
+import AppMain from "./components/AppMain.vue";
+import AppFooter from "./components/AppFooter.vue";
+
 export default {
   name: "App",
+  components: {
+    AppHeader,
+    AppFooter,
+    AppMain,
+  },
 };
 </script>
 
 <template>
-  <div>
-    <h1>ciao grande Karim</h1>
-  </div>
+  <AppHeader />
+  <AppMain />
+  <AppFooter />
 </template>
 
-<style scoped>
+<style lang='scss'>
+@use "./style/general";
 </style>
